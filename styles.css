@@ -1,0 +1,105 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 20px;
+  color: #333;
+}
+
+/* TITULOS */
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+/* FORMULARIOS */
+.form, .form-container {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+input {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* BOTONES */
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* LISTA DE VENTAS */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* TOTAL */
+#total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* LINKS */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* CONTENEDOR CENTRADO (LOGIN / REGISTER) */
+body > h2,
+body > input,
+body > button,
+body > p {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* BOTÓN LOGOUT */
+button.logout {
+  background: #dc3545;
+}
+
+button.logout:hover {
+  background: #a71d2a;
+}
