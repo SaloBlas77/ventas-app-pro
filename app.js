@@ -85,3 +85,39 @@ window.editarVenta = async (id, producto, precio, cantidad) => {
 
 // Inicializar lectura
 leerVentas();
+
+let chart = null;
+
+// ==========================
+// GENERAR GRÁFICA
+// ==========================
+function generarGrafica(datosPorDia) {
+  const ctx = document.getElementById("graficaVentas").getContext("2d");
+
+  const labels = Object.keys(datosPorDia);
+  const valores = Object.values(datosPorDia);
+
+  // Destruir gráfica anterior
+  if (chart) {
+    chart.destroy();
+  }
+
+  chart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: labels,
+      datasets: [{
+        label: "Ventas ($)",
+        data: valores
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          display: true
+        }
+      }
+    }
+  });
+}
