@@ -40,7 +40,7 @@ window.login = async () => {
   try {
     await signInWithEmailAndPassword(auth, email, password);
     alert("Login exitoso");
-    window.location.href = "index.html"; // redirige al CRUD
+    window.location.href = "ventas.html"; // redirige al CRUD
   } catch (error) {
     alert("Error: " + error.message);
   }
